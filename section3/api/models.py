@@ -1,12 +1,13 @@
 from . import db
-import datetime
+from datetime import datetime
 import uuid
 
 class Groups(db.Model):
     __tablename__ = 'groups'
 
-    groupId = db.Column(db.Integer, primary_key=True, default=uuid.uuid1())
-    groupName = db.Column(db.String(150), nullable=False)
+    id = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    groupId = db.Column(db.String(250), default=uuid.uuid1(), nullable=False, unique=True)
+    groupName = db.Column(db.String(150), nullable=False, unique=True)
     admin = db.Column(db.JSON, nullable=False)
     createdAt = db.Column(db.DateTime, default=datetime.now().strftime('%Y-%m-%dT%H:%M:%SZ'))
 

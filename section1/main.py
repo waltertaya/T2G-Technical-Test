@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 
-def unique_chars(s):
-    result = {}
-    s_set = set(s)
-    print(s_set)
-    for c in s_set:
-        result[c] = s.count(c)
-    return result
+def capitalize_1st_letter(s):
+    result = ''
+    for string in s.split():
+        result += string.capitalize() + ' '
+    return result.strip()
 
 
 if __name__ == '__main__':
-    print(unique_chars('hello'))
-    print(unique_chars('interview'))
+    s = 'hello'
+    print(capitalize_1st_letter(s))
+    s = 'i love programming'
+    print(capitalize_1st_letter(s))

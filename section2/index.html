@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+    <title>Frontend Mentor | FAQ accordion</title>
+  </head>
+  <body>
+    <main
+      class="main-content"
+      x-data="{
+      selected:null
+    }"
+    >
+      <section class="title flex">
+        <img
+          src="assets/images/icon-star.svg"
+          alt="star icon"
+          aria-label="hidden"
+        />
+        <h1>FAQs</h1>
+      </section>
+      <section class="questions">
+        <article class="question">
+          <div
+            class="question-wrapper flex"
+            x-on:click="selected !== 1 ? selected = 1 : selected = null"
+          >
+            <p class="bold-text">
+              What is Frontend Mentor, and how will it help me?
+            </p>
+            <img
+              src="assets/images/icon-plus.svg"
+              alt="open question"
+              x-bind:class="{'hidden' : selected == 1}"
+            />
+            <img
+              src="assets/images/icon-minus.svg"
+              alt="close question"
+              class="hidden"
+              x-bind:class="{'show' : selected == 1}"
+            />
+          </div>
+          <div
+            class="hidden-text"
+            x-bind:class="{'show-text' : selected == 1 }"
+          >
+            <p class="normal-text">
+              Frontend Mentor offers realistic coding challenges to help
+              developers improve their frontend coding skills with projects in
+              HTML, CSS, and JavaScript. It's suitable for all levels and ideal
+              for portfolio building.
+            </p>
+          </div>
+        </article>
+        <article class="question">
+          <div
+            class="question-wrapper flex"
+            x-on:click="selected !== 2 ? selected = 2 : selected = null"
+          >
+            <p class="bold-text">Is Frontend Mentor free?</p>
+            <img
+              src="assets/images/icon-plus.svg"
+              alt="open question"
+              x-bind:class="{'hidden' : selected == 2}"
+            />
+            <img
+              src="assets/images/icon-minus.svg"
+              alt="close question"
+              class="hidden"
+              x-bind:class="{'show' : selected == 2}"
+            />
+          </div>
+          <div
+            class="hidden-text"
+            x-bind:class="{'show-text' : selected == 2 }"
+          >
+            <p class="normal-text">
+              Yes, Frontend Mentor offers both free and premium coding
+              challenges, with the free option providing access to a range of
+              projects suitable for all skill levels.
+            </p>
+          </div>
+        </article>
+        <article class="question">
+          <div
+            class="question-wrapper flex"
+            x-on:click="selected !== 3 ? selected = 3 : selected = null"
+          >
+            <p class="bold-text">
+              Can I use Frontend Mentor projects in my portfolio?
+            </p>
+            <img
+              src="assets/images/icon-plus.svg"
+              alt="open question"
+              x-bind:class="{'hidden' : selected == 3}"
+            />
+            <img
+              src="assets/images/icon-minus.svg"
+              alt="close question"
+              class="hidden"
+              x-bind:class="{'show' : selected == 3}"
+            />
+          </div>
+          <div
+            class="hidden-text"
+            x-bind:class="{'show-text' : selected == 3 }"
+          >
+            <p class="normal-text">
+              Yes, you can use projects completed on Frontend Mentor in your
+              portfolio. It's an excellent way to showcase your skills to
+              potential employers!
+            </p>
+          </div>
+        </article>
+        <article class="question">
+          <div
+            class="question-wrapper flex"
+            x-on:click="selected !== 4 ? selected = 4 : selected = null"
+          >
+            <p class="bold-text">
+              How can I get help if I'm stuck on a challenge?
+            </p>
+            <img
+              src="assets/images/icon-plus.svg"
+              alt="open question"
+              x-bind:class="{'hidden' : selected == 4}"
+            />
+            <img
+              src="assets/images/icon-minus.svg"
+              alt="close question"
+              class="hidden"
+              x-bind:class="{'show' : selected == 4}"
+            />
+          </div>
+          <div
+            class="hidden-text"
+            x-bind:class="{'show-text' : selected == 4 }"
+          >
+            <p class="normal-text">
+              The best place to get help is inside Frontend Mentor's Discord
+              community. There's a help channel where you can ask questions and
+              seek support from other community members.
+            </p>
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

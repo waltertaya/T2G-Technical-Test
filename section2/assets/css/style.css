@@ -1,0 +1,164 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+ul,
+ol {
+  list-style: none;
+}
+html:focus-within {
+  scroll-behavior: smooth;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+a,
+img,
+span,
+data,
+input,
+button,
+ion-icon {
+  display: block;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button {
+  cursor: pointer;
+}
+input,
+button {
+  background: none;
+  border: none;
+  outline: none;
+  font: inherit;
+}
+
+input {
+  width: 100%;
+}
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Light-pink: hsl(275, 100%, 97%);
+  --pink: hsl(281, 83%, 54%);
+  --Grayish-purple: hsl(292, 16%, 49%);
+  --Dark-purple: hsl(292, 42%, 14%);
+  --font-family: "Work Sans", sans-serif;
+  --fs-text: 1rem;
+  --fs-h1: 2.5rem;
+}
+
+body {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: var(--fs-text);
+  min-height: 100vh;
+  background: url(../images/background-pattern-mobile.svg) no-repeat top
+    center/contain;
+  background-color: var(--Light-pink);
+  line-height: 1.6;
+  margin-top: 7rem;
+}
+h1 {
+  font-size: var(--fs-h1);
+  font-weight: 700;
+  color: var(--Dark-purple);
+}
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.bold-text {
+  color: var(--Dark-purple);
+  font-weight: 600;
+}
+.bold-text:hover {
+  color: var(--pink);
+}
+
+.main-content {
+  background-color: var(--White);
+  padding: 1rem;
+  width: 90%;
+  max-width: 550px;
+  max-height: min-content;
+  margin-inline: auto;
+  border-radius: 10px;
+  margin-top: 10vh;
+}
+.questions > * {
+  margin-top: 2rem;
+}
+.question-wrapper {
+  justify-content: space-between;
+  cursor: pointer;
+}
+.normal-text {
+  color: var(--Grayish-purple);
+  margin-top: 1rem;
+}
+
+@media (min-width: 600px) {
+  body {
+    background: url(../images/background-pattern-desktop.svg) no-repeat top
+      center/contain;
+    background-color: var(--Light-pink);
+  }
+  .main-content {
+    padding: 2rem;
+  }
+}
+@media (min-width: 1440px) {
+  .main-content {
+    margin-top: 30vh;
+  }
+}
+.hidden {
+  display: none;
+}
+.show {
+  display: block;
+}
+.hidden-text {
+  overflow: hidden;
+  max-height: 0;
+}
+.show-text {
+  max-height: 500px;
+  transition: max-height 1s ease;
+}

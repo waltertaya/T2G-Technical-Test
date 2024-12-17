@@ -67,6 +67,8 @@ Create a basic FAQ accordion using only HTML and CSS.
 
 ## **Project Structure**
 
+![image](https://github.com/user-attachments/assets/3b69c24f-63cd-412f-9670-e0ece8c9bb2a)
+
 ---
 
 

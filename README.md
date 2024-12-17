@@ -65,6 +65,9 @@ Create a basic FAQ accordion using only HTML and CSS.
 2. Open the `section2/index.html` file in your browser.  
 3. Test the accordion for responsiveness by resizing the browser window.
 
+![Screenshot from 2024-12-17 20-25-18](https://github.com/user-attachments/assets/12f2cc20-dbf8-4df9-b72d-d41217fa1af7)
+
+
 ---
 
 ## **Project Structure**

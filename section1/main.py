@@ -8,7 +8,7 @@ def capitalize_1st_letter(s):
 
 
 if __name__ == '__main__':
-    s = 'hello'
-    print(capitalize_1st_letter(s))
-    s = 'i love programming'
-    print(capitalize_1st_letter(s))
+    example = ['hello', 'i love programming', 'python is easy']
+    for i in example:
+        print(f'Input: {i}')
+        print(f'Output: {capitalize_1st_letter(i)}')

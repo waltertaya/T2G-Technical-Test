@@ -23,8 +23,10 @@ Write a program that takes a string as input, capitalizes the first letter of ea
 - **Code Location:** Available in the `section1/main.py` directory.
 
 **How to Test:**  
-1. Run the script for Python or JavaScript.
+1. Run the script for Python. `python3 main.py`
 2. Provide different test strings as input.
+
+![image](https://github.com/user-attachments/assets/6aaa76c1-2982-4662-bff2-db56f4e8d04e)
 
 ---
 

@@ -9,47 +9,41 @@
   font: inherit;
 }
 :root {
-  --White: hsl(0, 0%, 100%);
-  --Light-pink: hsl(275, 100%, 97%);
-  --pink: hsl(281, 83%, 54%);
-  --Grayish-purple: hsl(292, 16%, 49%);
-  --Dark-purple: hsl(292, 42%, 14%);
-  --font-family: "Work Sans", sans-serif;
   --fs-text: 1rem;
   --fs-h1: 2.5rem;
-}
-html,body {
-  height: 100%;
+  --White: hsl(0, 0%, 100%);
+  --pink: hsl(281, 83%, 54%);
+  --Light-pink: hsl(275, 100%, 97%);
+  --Dark-purple: hsl(292, 42%, 14%);
+  --Grayish-purple: hsl(292, 16%, 49%);
+  --font-family: "Work Sans", sans-serif;
 }
 body {
-  font-family: var(--font-family);
-  font-weight: 400;
-  font-size: var(--fs-text);
-  min-height: 100vh;
-  background: url(../images/background-pattern-mobile.svg) no-repeat top
-    center/contain;
-  background-color: var(--Light-pink);
   line-height: 1.6;
   margin-top: 7rem;
-  text-rendering: optimizeSpeed;
   line-height: 1.5;
+  font-weight: 400;
+  min-height: 100vh;
+  font-size: var(--fs-text);
+  text-rendering: optimizeSpeed;
+  font-family: var(--font-family);
+  background-color: var(--Light-pink);
+  background: url(../images/background-pattern-mobile.svg) no-repeat top center/contain;
 }
 
 .main-container {
-  background-color: var(--White);
   padding: 1rem;
   width: 90%;
   max-width: 700px;
-  max-height: min-content;
+  margin-top: 10vh;
   margin-inline: auto;
   border-radius: 10px;
-  margin-top: 10vh;
+  max-height: min-content;
+  background-color: var(--White);
 }
 @media (min-width: 600px) {
     body {
-      background: url(../images/background-pattern-desktop.svg) no-repeat top
-        center/contain;
-      background-color: var(--Light-pink);
+      background: url(../images/background-pattern-desktop.svg) no-repeat top center/contain;
     }
     .main-container {
       padding: 2rem;

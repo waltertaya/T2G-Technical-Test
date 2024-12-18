@@ -41,7 +41,7 @@ h1 {
 .bold-text:hover {
     color: var(--pink);
 }
-.questions > * {
+.quizes > * {
     margin-top: 2rem;
 }
 .question-wrapper {

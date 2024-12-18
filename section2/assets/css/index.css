@@ -8,6 +8,11 @@ a {
     color: inherit;
     text-decoration: none;
 }
+h1 {
+    font-size: var(--fs-h1);
+    font-weight: 700;
+    color: var(--Dark-purple);
+}
 button {
     cursor: pointer;
 }
@@ -24,31 +29,26 @@ img, picture, svg {
     max-width: 100%;
     display: block;
 }
-h1 {
-    font-size: var(--fs-h1);
-    font-weight: 700;
-    color: var(--Dark-purple);
-}
 .flex {
     display: flex;
     align-items: center;
     gap: 2rem;
 }
-.bold-text {
+.question {
     color: var(--Dark-purple);
     font-weight: 600;
 }
-.bold-text:hover {
+.question:hover {
     color: var(--pink);
 }
-.quizes > * {
+.main-content > * {
     margin-top: 2rem;
 }
 .question-wrapper {
     justify-content: space-between;
     cursor: pointer;
 }
-.normal-text {
+.answer {
     color: var(--Grayish-purple);
     margin-top: 1rem;
 }

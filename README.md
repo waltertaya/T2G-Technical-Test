@@ -18,7 +18,7 @@ Write a program that takes a string as input, capitalizes the first letter of ea
   Output: `"I Love Programming"`  
 
 **Implementation Details:**  
-- **Languages Used:** Python, JavaScript.  
+- **Languages Used:** Python.  
 - **Approach:** The program splits the string into words, capitalizes the first letter of each word, and joins them back into a single string.  
 - **Code Location:** Available in the `section1/main.py` directory.
 

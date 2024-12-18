@@ -15,3 +15,7 @@ if __name__ == '__main__':
     for i in example:
         print(f'Input: {i}')
         print(f'Output: {capitalize_1st_letter(i)}')
+    
+    print('\n')
+    test = input('Enter a string: ')
+    print(f'Output: {capitalize_1st_letter(test)}')

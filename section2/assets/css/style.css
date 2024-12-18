@@ -40,6 +40,7 @@ body {
   border-radius: 10px;
   max-height: min-content;
   background-color: var(--White);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 @media (min-width: 600px) {
     body {

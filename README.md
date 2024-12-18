@@ -37,6 +37,8 @@ Write a program that takes a string as input, capitalizes the first letter of ea
 **Objective:**  
 Create a basic FAQ accordion using only HTML and CSS.
 
+- [Live Demo](https://rad-scone-5d69cf.netlify.app/)
+
 ---
 
 ### **Task Description:**
